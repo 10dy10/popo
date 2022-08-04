@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+$main: #0a3711;
+$text: #202020;
+$white : #fff;
+
+@mixin border-line ($width: 1px, $style: solid) {
+  border: $width $style #999;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+}
