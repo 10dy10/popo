@@ -4,7 +4,7 @@
       <div class="circle"></div>
       <div class="square"></div>
       <div class="triangle"></div>
-      <!-- <div class="logo">DAYOUNG</div> -->
+      <div class="logo">DAYOUNG</div>
       <div class="shadow"></div>
     </div>
   </div>
@@ -26,6 +26,7 @@ export default {
   width: 100%;
   height: 100vh;
   background: $white;
+  z-index: 1000;
   .container {
     position: absolute;
     top: 50%;
