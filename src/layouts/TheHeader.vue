@@ -12,9 +12,11 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   nav {
     position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     gap: 2rem;

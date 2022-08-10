@@ -13,6 +13,7 @@ $white: #fff;
   height: 100%;
 }
 
+// loading 애니메이션
 @keyframes circle {
   0% {
     transform: translateY(0);
@@ -117,7 +118,6 @@ $white: #fff;
     width: 0;
   }
 }
-
 @keyframes logo {
   0% {
     transform: translateY(0);
