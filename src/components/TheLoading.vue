@@ -4,7 +4,7 @@
       <div class="circle"></div>
       <div class="square"></div>
       <div class="triangle"></div>
-      <div class="logo">DAYOUNG</div>
+      <div class="logo">DY</div>
       <div class="shadow"></div>
     </div>
   </div>
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-
+  name: 'TheLoding',
 };
 </script>
 
@@ -29,9 +29,9 @@ export default {
   z-index: 1000;
   .container {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-40%, -50%);
     width: 60px;
     height: 250px;
     margin: auto;
@@ -84,7 +84,7 @@ export default {
       text-align: center;
       color: #3498db;
       font-size: 30px;
-      margin-left: -5px;
+      // margin-left: -5px;
       opacity: 0;
       animation: logo 5s ease-in-out infinite;
     }

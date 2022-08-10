@@ -1,40 +1,33 @@
 <template>
   <TheLoading v-if="isLoading"/>
   <TheHeader />
-  <div class="wrap">
-    <TheMain />
-  </div>
+  <router-view></router-view>
+  <TheFooter />
 </template>
 
 <script>
 import TheLoading from './components/TheLoading.vue'
 import TheHeader from './layouts/TheHeader.vue'
-import TheMain from './components/TheMain.vue'
+import TheFooter from './layouts/TheFooter.vue'
 
 export default {
   name: 'App',
   components: {
+    TheLoading,
     TheHeader,
-    TheMain,
-    TheLoading
+    TheFooter
   },
   data(){
     return {
       isLoading: true,
     }
   },
-  methods: {
-    // async fetchData(){
-    //   this.isLoading = true;
-    //   const { data } = await fetchPost();
-    //   this.isLoading = false;
-    //   console.log(data.posts);
-    //   this.postItems = data.posts;
-    // }
+  mounted(){
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 4500);
   },
-  created(){
-    // this.fetchData();
-  }
+  
 }
 </script>
 

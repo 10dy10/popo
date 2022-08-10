@@ -1,10 +1,10 @@
 import { createWebHistory, createRouter } from "vue-router";
-import TheLoading from '@/components/TheLoading.vue';
+import Home from "@/components/TheMain";
 
 const routes = [
   {
-    path: "/theloading",
-    component: TheLoading,
+    path: '/',
+    component: Home
   }
 ];
 
