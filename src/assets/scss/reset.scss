@@ -131,7 +131,7 @@ html {
   font-size: 62.5%;
   -webkit-text-size-adjust: none;
   scroll-behavior: smooth;
-  overflow: hidden;
+  overflow-x: hidden;
   color: var(--text-color);
 }
 body {
@@ -200,4 +200,20 @@ button {
   content: "";
   display: block;
   clear: both;
+}
+
+$main: #0a3711;
+$text: #202020;
+$white: #fff;
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 100px;
+  background-color: #e4e4e4;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: $main;
 }
