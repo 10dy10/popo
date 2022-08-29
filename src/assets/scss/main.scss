@@ -66,6 +66,7 @@ nav {
       background-size: cover;
       transition: all 1s;
       cursor: pointer;
+      will-change: transform;
     }
     .click {
       position: absolute;

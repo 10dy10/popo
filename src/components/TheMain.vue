@@ -16,16 +16,19 @@
       </div>
     </div>
   </main>
-  <section>
+  <section class="container">
     <div class="inner">
-      <h2>lorem ipsum</h2>
+      
     </div>
   </section>
   <TheFooter />
 </template>
 
 <script>
-import TheFooter from '@/layouts/TheFooter.vue'
+import TheFooter from '@/layouts/TheFooter.vue';
+import { gsap, ScrollTrigger } from 'gsap/all';
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default {
   name: 'TheMain',
@@ -34,6 +37,7 @@ export default {
   },
   data(){
     return {
+      
     }
   },
   methods: {
@@ -42,10 +46,9 @@ export default {
       document.querySelector('.main-wrap').classList.add('show')
       document.querySelector('nav').classList.add('show')
       document.querySelector('html').classList.add('show')
-    }
+    },
   },
   mounted() {
-
   }
 }
 </script>
